@@ -21,7 +21,7 @@ function Body() {
           data={Avatar}
           renderItem={({ item }) => <Avatars item={item} />}
           showsVerticalScrollIndicator={false}
-          keyExtractor={(item, index) => index}
+          keyExtractor={(item, index) => index.toString()}
         />
       </View>
     </ScrollView>

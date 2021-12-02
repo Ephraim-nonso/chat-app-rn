@@ -4,7 +4,6 @@ export const styles = StyleSheet.create({
   container: {
     marginTop: 15,
     flexDirection: "row",
-    justifyContent: "space-between",
     alignItems: "center",
   },
   image: {
@@ -12,19 +11,34 @@ export const styles = StyleSheet.create({
     height: 50,
     borderRadius: 25,
   },
-  msgContainer: {
-    // borderTopWidth: 1,
+  msgTimeContainer: {
     borderColor: "#ccc",
-    width: "60%",
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-around",
     borderBottomWidth: 1,
     paddingVertical: 10,
+    marginRight: 15,
+  },
+  msgContainer: {
+    width: "70%",
+    marginLeft: 10,
   },
   timeContainer: {
-    paddingVertical: 10,
-    borderBottomWidth: 1,
+    justifyContent: "flex-end",
+    alignItems: "flex-end",
   },
+
   name: {
     fontSize: 22,
     fontWeight: "500",
+    marginBottom: 5,
+  },
+  num: {
+    backgroundColor: "#e4ceed",
+    paddingVertical: 5,
+    paddingHorizontal: 9,
+    borderRadius: 30,
+    marginTop: 5,
   },
 });
